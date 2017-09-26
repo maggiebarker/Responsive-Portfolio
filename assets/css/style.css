@@ -10,13 +10,17 @@ body{
 	color: #777;
 }
 
+.wrapper {
+	width: 980px;
+	margin: 0 auto;
+}
+
 #main-container .container {
 	width: 60%;
-	max-width: 960px;
-	margin: 30 auto;
+	max-width: 980px;
+	margin: 0 auto;
 	border: 40px solid #eee;
 	clear: both;
-
 }
 
 h1, h2, h3, p {
@@ -44,7 +48,6 @@ h2, h3 {
 	font-size: 20px;
 }
 
-
 #masthead {
 	background: #fff;
 	margin: 0 0 30px;
@@ -52,7 +55,7 @@ h2, h3 {
 	color: #fff;
 	overflow: auto;
 	border-bottom: 2px solid #ccc;
-	position: fixed;
+	position: static;
 	width: 100%;
 }
 
@@ -75,6 +78,7 @@ h2, h3 {
 nav {
 	float: right;
 	margin-top: 25px;
+	margin-right: 60px;
 }
 
 nav a{
@@ -84,7 +88,7 @@ nav a{
 	display: inline-block;
 	border-left: 1px solid #efefef;
 	padding-left: 15px;
-	padding-right: 30px;
+	padding-right: 15px;
 	line-height: 18px;
 }
 
@@ -93,43 +97,40 @@ nav a:first-child {
 }
 
 #main-container {
-	padding-top: 130px;
+	padding-top: 40px;
 	height: 800px;
-	width: 650px;
+	width: 100%;
+	max-width: 980px;
 }
 
 .main-content{
 	background: #fff;
 	padding: 20px;
-	margin: 0 0 40px 40px;
-	width: 100%;
-	max-width: 650px; 
-	float: left;
+	margin: 20, 40, 40, 0;
+	width: 650px; 
 	border: 1px solid #ddd;
+	float: left;
 }
 
 .auth-image {
-	width: 200px;
+	width: 595px;
 	height: auto;
-	margin-top: 10px;
+	margin: 20, 15, 20, 15;
 	float: left;
-	margin-right: 25px;
+	
 }
 
 .sidebar {
-	position: relative;
-	bottom: 700px;
-	left: 800px;
 	background: #fff;
 	padding: 30px;
+	margin: 10, 0, 20, 10;
 	width: 40%;
-	max-width: 270px;
-	float: left;
+	max-width: 240px;
+	float: right;
 	border: 1px solid #ddd;
-	margin-bottom: 20px;
 }
 
-h3, .sidebar, h2 {
+h3, #connect, h2 {
 	border-bottom: 2px solid #eee;
 	padding-bottom: 20px;
 	margin-bottom: 15px;
@@ -137,10 +138,9 @@ h3, .sidebar, h2 {
 }
 
 .social {
-	width: 58px;
-	height: 58px;
+	width: 55px;
+	height: 55px;
 	margin-top: 8px;
-	margin-right: 5px;
 }
 
 .social:last-child{
@@ -159,7 +159,7 @@ footer {
 }
 
 .work{
-	width: 274px;
+	width: 595px;
 	overflow: auto;
 	position: relative;
 	float: left;
@@ -171,8 +171,8 @@ footer {
 }
 
 .work img{
-	width: 200px;
-	height: 200px;
+	width: 500px;
+	height: 500px;
 	border: 0 none;
 	opacity: 1.0;
 }
@@ -185,7 +185,7 @@ footer {
 	position: absolute;
 	bottom: 5px;
 	padding: 2px;
-	width: 200px;
+	width: 500px;
 	margin-bottom: 0;
 	font-weight: 100;
 }
@@ -217,7 +217,7 @@ textarea{
 
 textarea {
 	height: 400px;
-	width: 600px;
+	width: 97%;
 }
 
 input[type=submit] {
@@ -228,3 +228,144 @@ input[type=submit] {
 	padding: 10px, 30px;
 	cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+	.wrapper{
+		width: 768px;
+	}
+
+	.main-content{
+		width: 700px;
+	}
+
+	nav {
+		margin-right: 45px;
+	}
+
+	nav a{
+		padding: 5px;
+	}
+
+	.auth-image{
+		width: 200px;
+		height: auto;
+	}
+
+	.sidebar {
+		width: 100%;
+		max-width: 700px;
+		margin-left: 20px;
+		border: 1px solid #ddd;
+		margin-bottom: 20px;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+	.wrapper {
+		width: 640px;
+	}
+
+	nav {
+		margin-right: 270px;
+		margin-top: 25px;
+}
+
+	nav a{
+		display: inline-block;
+		border-left: 1px solid #efefef;
+		padding-left: 10px;
+		padding-right: 10px;
+		line-height: 18px;
+	}
+
+	.main-content{
+		width: 620px;
+	}
+	.auth-image {
+		width: 580px;
+		height: auto;
+		margin: 10, 15, 15, 20;
+	}
+}
+
+/*@media screen and (max-width: 1320px) {}
+	.wrapper{
+		width: 1320;
+	}
+
+	#logo {
+	position: relative;
+	left: 40px;
+	width: 250px;
+	height: 90px;
+	background: #4aaaa5;
+	float: left;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	text-align: center;
+	line-height: 90px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+	.main-content{
+		width: 650px;
+	}
+
+	nav {
+		margin-right: 360px;
+	}
+
+	nav a {
+		padding: 15px;
+	}
+
+	.auth-image{
+		width: 200px;
+		margin: 10, 0, 0, 25;
+	}
+
+	.sidebar{
+		width: 40%;
+		max-width: 240px;
+		margin-left: 40px;
+		float: left;
+	}
+*/
+
+/* @media screen and (max-width: 640px) {
+	.wrapper{
+		width: 640px;
+	}
+}
+	.main-content{
+		width: 600px;
+	}
+
+	nav {
+		margin-right: 45px;
+	}
+
+	nav a{
+		padding: 5px;
+	}
+
+	.auth-image{
+		width: 550px;
+		height: auto;
+		margin: 10, 15, 15, 20;
+	}
+
+	.sidebar {
+		width: 100%;
+		max-width: 600px;
+		margin-left: 20px;
+		float: left;
+		border: 1px solid #ddd;
+		margin-bottom: 20px;
+	}
+
+}
+*/
