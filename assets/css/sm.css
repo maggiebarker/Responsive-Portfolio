@@ -3,6 +3,8 @@
 }
 
 body{
+	width: 640px;
+	height: auto;
 	background: url('../images/vintage-leaves.png');
 	font-size: 18px;
 	line-height: 25px;
@@ -15,7 +17,7 @@ body{
 	width: 60%;
 	max-width: 640px;
 	margin: 0 auto;
-	border: 40px solid #eee;
+	border: 10px solid #eee;
 	clear: both;
 
 }
@@ -47,14 +49,14 @@ h2, h3 {
 
 
 #masthead {
+	width: 640px;
 	background: #fff;
-	margin: 0 0 30px;
+	margin: 0 0 30px 0;
 	z-index: 99;
 	color: #fff;
 	overflow: auto;
 	border-bottom: 2px solid #ccc;
-	position: absolute;
-	width: 640px;
+	position: relative;
 }
 
 
@@ -68,11 +70,13 @@ h2, h3 {
 	color: #fff;
 	font-weight: 700;
 	font-size: 30px;
-	padding-top: 30px;
+	padding-top: 0px;
 	padding-bottom: 30px;
 	padding-left: 207px;
 	padding-right: 206px;
 	text-decoration: none;
+	position: relative;
+	left: 0px;
 }
 
 
@@ -98,7 +102,7 @@ nav a:first-child {
 }
 
 #main-container {
-	padding-top: 130px;
+	padding-top: 10px;
 	height: 800px;
 	width: 640px;
 }

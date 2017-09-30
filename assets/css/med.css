@@ -3,6 +3,8 @@
 }
 
 body{
+	width: 768px;
+	height: auto;
 	background: url('../images/vintage-leaves.png');
 	font-size: 18px;
 	line-height: 25px;

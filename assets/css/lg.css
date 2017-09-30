@@ -3,12 +3,14 @@
 }
 
 body{
+	width: 980px;
+	height: auto;
 	background: url('../images/vintage-leaves.png');
 	font-size: 18px;
 	line-height: 25px;
 	font-family: 'Arial' 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777;
-	margin: 40 auto;
+	margin: 0 auto;
 }
 
 #main-container .container {
